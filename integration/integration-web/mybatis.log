@@ -1,0 +1,76 @@
+[DEBUG][2016-02-17 17:28:41,563][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: best-match
+[DEBUG][2016-02-17 17:28:41,584][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2016-02-17 17:28:41,586][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[DEBUG][2016-02-17 17:28:41,626][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-02-17 17:28:41,629][org.apache.http.impl.execchain.MainClientExec]Opening connection {}->http://localhost:8080
+[DEBUG][2016-02-17 17:28:41,637][org.apache.http.impl.conn.HttpClientConnectionOperator]Connecting to localhost/127.0.0.1:8080
+[DEBUG][2016-02-17 17:28:41,642][org.apache.http.impl.conn.HttpClientConnectionOperator]Connection established 127.0.0.1:61874<->127.0.0.1:8080
+[DEBUG][2016-02-17 17:28:41,642][org.apache.http.impl.execchain.MainClientExec]Executing request GET /integration-web/testController/captcha?1=1&token=1455701320781%7C7929&applyNo=201201510080023599&productType=lendApp HTTP/1.1
+[DEBUG][2016-02-17 17:28:41,643][org.apache.http.impl.execchain.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2016-02-17 17:28:41,644][org.apache.http.impl.execchain.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2016-02-17 17:28:41,646][org.apache.http.headers]http-outgoing-0 >> GET /integration-web/testController/captcha?1=1&token=1455701320781%7C7929&applyNo=201201510080023599&productType=lendApp HTTP/1.1
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.headers]http-outgoing-0 >> Host: localhost:8080
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.headers]http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "GET /integration-web/testController/captcha?1=1&token=1455701320781%7C7929&applyNo=201201510080023599&productType=lendApp HTTP/1.1[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.5 (java 1.5)[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,647][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,763][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 404 Not Found[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,763][org.apache.http.wire]http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "Content-Language: en[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "Content-Length: 1027[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "Date: Wed, 17 Feb 2016 09:28:41 GMT[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2016-02-17 17:28:41,764][org.apache.http.wire]http-outgoing-0 << "<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /integration-web/testController/captcha</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/integration-web/testController/captcha</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>"
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 404 Not Found
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << Server: Apache-Coyote/1.1
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << Content-Type: text/html;charset=utf-8
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << Content-Language: en
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << Content-Length: 1027
+[DEBUG][2016-02-17 17:28:41,770][org.apache.http.headers]http-outgoing-0 << Date: Wed, 17 Feb 2016 09:28:41 GMT
+[DEBUG][2016-02-17 17:28:41,774][org.apache.http.impl.execchain.MainClientExec]Connection can be kept alive indefinitely
+[DEBUG][2016-02-17 17:28:41,787][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+[DEBUG][2016-02-17 17:28:41,788][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-02-17 17:35:39,131][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: best-match
+[DEBUG][2016-02-17 17:35:39,229][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2016-02-17 17:35:39,231][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[DEBUG][2016-02-17 17:35:39,281][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2016-02-17 17:35:39,284][org.apache.http.impl.execchain.MainClientExec]Opening connection {}->http://localhost:8080
+[DEBUG][2016-02-17 17:35:39,293][org.apache.http.impl.conn.HttpClientConnectionOperator]Connecting to localhost/127.0.0.1:8080
+[DEBUG][2016-02-17 17:35:39,298][org.apache.http.impl.conn.HttpClientConnectionOperator]Connection established 127.0.0.1:61945<->127.0.0.1:8080
+[DEBUG][2016-02-17 17:35:39,298][org.apache.http.impl.execchain.MainClientExec]Executing request GET /integration-web/testController/captcha?1=1&token=1455701738403%7C8909&applyNo=201201510080023599&productType=lendApp HTTP/1.1
+[DEBUG][2016-02-17 17:35:39,298][org.apache.http.impl.execchain.MainClientExec]Target auth state: UNCHALLENGED
+[DEBUG][2016-02-17 17:35:39,299][org.apache.http.impl.execchain.MainClientExec]Proxy auth state: UNCHALLENGED
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.headers]http-outgoing-0 >> GET /integration-web/testController/captcha?1=1&token=1455701738403%7C8909&applyNo=201201510080023599&productType=lendApp HTTP/1.1
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.headers]http-outgoing-0 >> Host: localhost:8080
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.headers]http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.headers]http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.headers]http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.wire]http-outgoing-0 >> "GET /integration-web/testController/captcha?1=1&token=1455701738403%7C8909&applyNo=201201510080023599&productType=lendApp HTTP/1.1[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.wire]http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.wire]http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,302][org.apache.http.wire]http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.5 (java 1.5)[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,303][org.apache.http.wire]http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,303][org.apache.http.wire]http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "HTTP/1.1 404 Not Found[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "Content-Type: text/html;charset=utf-8[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "Content-Language: en[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "Content-Length: 1027[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "Date: Wed, 17 Feb 2016 09:35:39 GMT[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,354][org.apache.http.wire]http-outgoing-0 << "[\r][\n]"
+[DEBUG][2016-02-17 17:35:39,355][org.apache.http.wire]http-outgoing-0 << "<html><head><title>Apache Tomcat/7.0.52 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /integration-web/testController/captcha</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/integration-web/testController/captcha</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.52</h3></body></html>"
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << HTTP/1.1 404 Not Found
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << Server: Apache-Coyote/1.1
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << Content-Type: text/html;charset=utf-8
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << Content-Language: en
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << Content-Length: 1027
+[DEBUG][2016-02-17 17:35:39,360][org.apache.http.headers]http-outgoing-0 << Date: Wed, 17 Feb 2016 09:35:39 GMT
+[DEBUG][2016-02-17 17:35:39,365][org.apache.http.impl.execchain.MainClientExec]Connection can be kept alive indefinitely
+[DEBUG][2016-02-17 17:35:39,373][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8080] can be kept alive indefinitely
+[DEBUG][2016-02-17 17:35:39,373][org.apache.http.impl.conn.PoolingHttpClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

@@ -1,0 +1,132 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+	<!-- 手机抓取器 -->
+	<cache name="mobile" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<!-- jd抓取器 -->
+	<cache name="jd" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- 学信抓取器 -->
+	<cache name="chsi" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- qq抓取器 -->
+	<cache name="qq" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- 一号店抓取器 -->
+	<cache name="yihaodian" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- 一号店抓取器 httpunit -->
+	<cache name="yihaodianHttpnit" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<!-- 淘宝抓取器 -->
+	<cache name="taobao" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="2400" timeToIdleSeconds="1800">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- 公积金抓取器 -->
+	<cache name="gjj" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="2400" timeToIdleSeconds="1800">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<!-- 信用卡账单抓取器 -->
+	<cache name="creditCardBills" maxElementsInMemory="50"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="2400"
+		timeToIdleSeconds="1800">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- 招聘抓取器 -->
+	<cache name="job" maxElementsInMemory="50"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="2400"
+		timeToIdleSeconds="1800">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<!-- 简版征信报告抓取器 -->
+	<cache name="creditReport" maxElementsInMemory="50"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="1800"
+		timeToIdleSeconds="0">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<!-- 借记卡 -->
+	<cache name="netBankCard" maxElementsInMemory="1" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="600" timeToIdleSeconds="300">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+	<!-- gome抓取器 -->
+	<cache name="gome" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+	<cache name="selenium_error_cache" maxElementsInMemory="5"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="900"
+		timeToIdleSeconds="900" />
+
+	<!-- httpUnit -->
+	<cache name="httpUnit_error_cache" maxElementsInMemory="5"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="900"
+		timeToIdleSeconds="900" />
+
+	<!-- 注册的服务 -->
+	<cache name="services" maxElementsInMemory="100" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="0" timeToIdleSeconds="0" />
+
+	<!-- 进件号的手机下载状态 -->
+	<cache name="mobile_load_bills" maxElementsInMemory="10000"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="3600"
+		timeToIdleSeconds="0" />
+
+	<!-- 进件号的手机下载状态 -->
+	<cache name="taobao_load_bills" maxElementsInMemory="10000"
+		overflowToDisk="false" eternal="false" timeToLiveSeconds="3600"
+		timeToIdleSeconds="0" />
+	<!-- 人人抓取器 -->
+	<cache name="renren" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+			class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+    <!-- 社保抓取器 -->
+    <cache name="insurance" maxElementsInMemory="50" overflowToDisk="false"
+           eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+        <cacheEventListenerFactory
+                class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+    </cache>
+    <!-- sn抓取器 -->
+	<cache name="suning" maxElementsInMemory="50" overflowToDisk="false"
+		eternal="false" timeToLiveSeconds="1800" timeToIdleSeconds="1500">
+		<cacheEventListenerFactory
+		class="com.zhizu.crawler.cache.listener.CrawlerCacheListenerFactory" />
+	</cache>
+
+</ehcache>

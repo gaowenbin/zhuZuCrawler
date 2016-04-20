@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>1.0.0</modelVersion>
+  <groupId>integration</groupId>
+  <artifactId>integration</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>integration-web</module>
+    <module>integration-dao</module>
+    <module>integration-common</module>
+  </modules>
+  
+  
+  <properties>
+  		<!-- 配置版本�?使用 例如${springVersion},${jsp-api.version}-->
+		<springVersion>3.2.3.RELEASE</springVersion>
+		<jsp-api.version>2.2</jsp-api.version>
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+		<integration.version>1.0</integration.version>
+		<kafka.version>0.8.2.0</kafka.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
+		<model-collector.version>0.2-SNAPSHOT</model-collector.version>
+	</properties>
+  
+  <repositories>
+		<repository>
+			<id>puhuifinance</id>
+			<name>Maven of Puhuifinance.com</name>
+			<url>http://inside.puhuifinance.com/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>jboss</id>
+			<name>Maven of jboss.org</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+
+		<repository>
+			<id>oschina</id>
+			<name>Maven of oschina.net</name>
+			<url>http://maven.oschina.net/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<layout>default</layout>
+		</repository>
+
+		<repository>
+			<id>spring-libs-snapshot</id>
+			<url>http://repo.spring.io/libs-snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
